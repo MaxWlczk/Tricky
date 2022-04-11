@@ -1,0 +1,83 @@
+.code-pin-container {
+  margin: 20px auto;
+  border: 1px solid grey;
+  width: 100%;
+
+  .code-pin-display {
+    border: 1px solid black;
+    width: 80%;
+    height: 25px;
+    margin: 20px auto;
+    font-size: 20px;
+  }
+
+  .flashing {
+    animation-duration: 0.8s;
+    animation-name: clignoter;
+    animation-iteration-count: infinite;
+    transition: none;
+    @keyframes clignoter {
+      0% {
+        opacity: 1;
+      }
+      40% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+  }
+
+  .button-container {
+    display: grid;
+    grid-template: auto / repeat(12, 1fr);
+    gap: 10px 20px;
+    width: 80%;
+    margin: 20px auto;
+
+    & > .col-container-12 {
+      grid-column-end: span 12;
+    }
+
+    & > .col-container-11 {
+      grid-column-end: span 11;
+    }
+
+    & > .col-container-10 {
+      grid-column-end: span 10;
+    }
+
+    & > .col-container-9 {
+      grid-column-end: span 9;
+    }
+
+    & > .col-container-8 {
+      grid-column-end: span 8;
+    }
+
+    & > .col-container-7 {
+      grid-column-end: span 7;
+    }
+
+    & > .col-container-6 {
+      grid-column-end: span 6;
+    }
+
+    & > .col-container-5 {
+      grid-column-end: span 5;
+    }
+
+    & > .col-container-4 {
+      grid-column-end: span 4;
+    }
+
+    & > .col-container-3 {
+      grid-column-end: span 3;
+    }
+
+    & > .col-container-2 {
+      grid-column-end: span 2;
+    }
+  }
+}
