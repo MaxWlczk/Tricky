@@ -27,9 +27,11 @@ const Game = (props) => {
 
   return (
     <Fragment>
+      <h1>Quel est le code pin le plus basique ?</h1>
       <CodePin setIsValid={setIsValid} setError={setError} codePin={codePin} />
       {isValid && <span>Felicitation, c'est le bon code !</span>}
       {error}
+      <p className="response-absolute">response : 0000</p>
     </Fragment>
   );
 };
